@@ -31,7 +31,7 @@ $(SERVER_TARGET): $(SERVER_OBJ) $(COMMON_OBJ)
 	$(CC) -pthread $(CFLAGS) -o $(SERVER_TARGET) $(SERVER_OBJ) $(COMMON_OBJ)
 
 $(CLIENT_TARGET): $(CLIENT_OBJ) $(COMMON_OBJ)
-	$(CC) -pthread -lpthread $(CFLAGS) -o $(CLIENT_TARGET) $(CLIENT_OBJ) $(COMMON_OBJ)
+	$(CC) -pthread $(CFLAGS) -o $(CLIENT_TARGET) $(CLIENT_OBJ) $(COMMON_OBJ)
 
 clean:
 	-rm -f *.o
